@@ -6,6 +6,7 @@
   display: flex;
   justify-content: center;
   column-gap: 30px;
+  flex-wrap:wrap
 
 }
 .index-category-box{
@@ -13,18 +14,12 @@
   width: 250px;
   height: 170px;
   background-color: red;
-  box-shadow: 0 0 20px 2px rgba(0,0,0,.1);
+  box-shadow: 0 0 20px 2px rgba(0,0,0,3);
+  align-items:center;
   transition: 1s;
+  position:relative;
 }
-.index-category-box h3{
 
-  font-size: 17px;
-  line-height:280px;
-  text-shadow: 10px 10px 10px black;
-
-
-
-}
 
 .index-category-box:hover{
   transform:scale(1.2);
@@ -58,5 +53,240 @@
 .index-category-box:nth-child(5){
 
   background-image: url(../img/hail_damage.png);
+  
+}
+
+
+
+.index-category-box:hover  .dark-overlay{
+
+opacity:0;
+
+}
+
+.index-category-box h3{
+
+  font-size: 17px;
+  line-height:280px;
+  text-shadow: 2px 2px 4x black;
+  
+z-index: 100;
+
+
+}
+
+
+
+/*=============== Sponsors============*/
+
+/*========== Responsive typography ==========*/
+@media screen and (min-width: 1120px) {
+  :root {
+    --h2-font-size: 1.5rem;
+    --small-font-size: .875rem;
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--body-font);
+  background-color: var(white);
+  color: var(--text-color);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== CARD ===============*/
+.Gcontainer {
+  display: grid;
+  place-items: center;
+  margin-inline: 1.5rem;
+  background-color: #fff;
+
+}
+
+.card__container {
+  display: grid;
+  row-gap: 2rem;
+}
+
+
+
+.card__article {
+  position: relative;
+  overflow: hidden;
+}
+
+.card__img {
+  width: 300px;
+
+}
+
+
+
+.card__data {
+  width: 280px;
+  background-color: rgb(59, 137, 227);
+  padding: 1.7rem 2rem;
+  box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+  border-radius: 1rem;
+  position: absolute;
+  bottom: -11rem;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  opacity: 0;
+  transition: opacity 1s 1s;
+}
+
+.card__description {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: .25rem;
+}
+
+.card__title {
+  font-size: var(--h2-font-size);
+  font-weight: 500;
+  color: var(--title-color);
+  margin-bottom: .75rem;
+}
+
+.card__button {
+  text-decoration: none;
+  font-size: var(--small-font-size);
+  font-weight: 500;
+  color: var(--first-color);
+}
+
+.card__button:hover {
+  text-decoration: underline;
+}
+
+/* Naming animations in hover */
+.card__article:hover .card__data {
+  animation: show-data 1s forwards;
+  opacity: 1;
+  transition: opacity .3s;
+}
+
+.card__article:hover {
+  animation: remove-overflow 2s forwards;
+}
+
+.card__article:not(:hover) {
+  animation: show-overflow 2s forwards;
+}
+
+.card__article:not(:hover) .card__data {
+  animation: remove-data 1s forwards;
+}
+
+/* Card animation */
+@keyframes show-data {
+  50% {
+    transform: translateY(-10rem);
+  }
+  100% {
+    transform: translateY(-7rem);
+  }
+}
+
+@keyframes remove-overflow {
+  to {
+    overflow: initial;
+  }
+}
+
+@keyframes remove-data {
+  0% {
+    transform: translateY(-7rem);
+  }
+  50% {
+    transform: translateY(-10rem);
+  }
+  100% {
+    transform: translateY(.5rem);
+  }
+}
+
+@keyframes show-overflow {
+  0% {
+    overflow: initial;
+    pointer-events: none;
+  }
+  50% {
+    overflow: hidden;
+  }
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 340px) {
+  .Gcontainer {
+    margin-inline: 1rem;
+  }
+
+  .card__data {
+    width: 250px;
+    padding: 1rem;
+  }
+}
+
+/* For medium devices */
+@media screen and (min-width: 768px) {
+  .card__container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5rem;
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 1120px) {
+  .Gcontainer {
+    height: 100vh;
+  }
+
+  .card__container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .card__img {
+    width: 348px;
+  }
+  .card__data {
+    width: 316px;
+    padding-inline: 2.5rem;
+  }
+}
+
+
+@media only screen and (max-width: 600px)
+{
+
+  .index-category{
+
+    width:100%;
+   padding:200px 10px;
+    row-gap: 30px;
+    flex-wrap:wrap
+  
+  }
+  .index-category-box{
+  
+    width: calc(100%-20px);
+    height: 160px;
+    
+  }
+  
   
 }
