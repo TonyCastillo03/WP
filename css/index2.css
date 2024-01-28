@@ -250,7 +250,7 @@ a {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 500px) {
   .container {
     margin-inline: 1rem;
   }
@@ -1040,7 +1040,7 @@ height:180px;
   height:70vh;
  
    flex-direction:row;
-background-color:black;
+background-color:white;
  
    
 
@@ -1064,12 +1064,12 @@ background-color:black;
 
 .Final .box-1{
 
-  margin-top: 190px;
+  margin-top: 170px;
   position: absolute;
-   right: 1200px;
-   width:120px;
-   height:130px;
-   background-image: url(../img/logo_polar_bear-cutout_black.png.jpg);
+   right: 1000px;
+   width:350px;
+   height:160px;
+   background-image: url(../img/gray_logo_final.png);
  border:0px;
 
  
@@ -1077,90 +1077,15 @@ background-color:black;
   
 }
 
-.Final .box-2{
-
-  margin-top: 190px;
-position: absolute;
- right:1030px;
- width:160px;
- height:65px;
- font-size:26px;
- background-color:black;
- font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
 
 
-
-
-.Final .box-2 .text{
-
-   
-  font-size:40px;
-  font-weight: 900;
-  position: absolute;
-   height:60px;
-  left:0px;
-  background-color:none;
-  color:rgb(0, 163, 253);
-  top:23px;
-
-
-}
-
-
-.Final .box-3{
-
-  margin-top: 250px;
-position: absolute;
- right:1030px;
- width:160px;
- height:24px;
- font-size:26px;
- background-color: black;
- font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-
-
-.Final .box-3 .text-2{
- margin-left: 0px;
- 
-  flex-direction: start;
-  font-size:15px;
-  line-height: 12px;
-  font-weight: 900;
-  position: absolute;
- 
-  display:flex;
-  left:0px;
-  width:1000px;
-  background-color:none;
-  color:gray;
-  top:10px;
-}
-
-.Final .box-3 .text-3{
-  margin-top: 7px;
-  
-   flex-direction: start;
-   font-size:15px;
-   line-height: 12px;
-   font-weight: 900;
-   position: absolute;
-  
-   display:flex;
-   left:0px;
-   width:1000px;
-   background-color:black;
-   color:gray;
-   top:20px;
- }
 
 
  .Final .box-4{
 
-  margin-top: 0px;
+  
   position: absolute;
+  top:3750px;
    left: 1000px;
    width:500px;
    height:500px;
@@ -1186,7 +1111,7 @@ box-sizing: border-box;
   padding: 0;
   color: white;
   text-align: center;
-  text-shadow: 10px 10px 10px black;
+  text-shadow: 10px 10px 10px gray;
 
  }
  
@@ -1735,24 +1660,79 @@ align-items: Center;
 
   @media only screen and (max-width: 600px){
 
+
+    
+.Dent-Repair .image{
+  position:absolute;
+  left:40px;
+    height: 390px;
+  width: 75%;
+  background-color:black;
+  line-height: 10px;
+  background-image: url(../img/free_5.png);
+  margin-bottom: 10vh;
+  padding:20px;
+  
+  
+  }
+  
+
+     .Dent-Repair .box-text h2{
+
+     line-height: 50px;
+     width:100%;
+
+     }
+
+    .Dent-Repair .box-text{
+
+
+
+      background-color: white;
+       position: absolute;
+      
+       top:-500px;
+        left:70px;
+        width:75%;
+        height:600px;
+        line-height:30px;
+        font-size:26px;
+        
+      }
+     
+     
+       .Dent-Repair .box-text .text {
+       color: black;
+       text-align: left;
+       margin-top:100px;
+       font-size:8px;
+     }
+     
+
+    .content{
+  
+      width:100%;
+    
+     
+    
+     }
     .login-box{
      
      
-      top:75%;
-      left: 230px;
-      width: 80%;
-  
-     
+   
+      width:75%;
+      left:210px;
+     margin-top:150px;
    
     
      }
 
      .Final .box-4{
 
-      margin-top: 30px;
+      margin-top: 1990px;
       position: absolute;
-       left: 20px;
-       width:400px;
+       left: -10px;
+       width:80%;
        height:400px;
        padding:40px;
        
@@ -1762,6 +1742,14 @@ align-items: Center;
     
     
      }
+
+
+     .login-box .user-box input{
+   
+      font-size: 10px;
+    
+     
+      }
 
      .swiper-container {
 
@@ -1778,6 +1766,7 @@ align-items: Center;
      
  .content h1{
   position:absolute;
+  left:40px;
  margin-bottom: 300px;
   font-size:30px;
   font-weight:900;
@@ -1817,19 +1806,7 @@ align-items: Center;
 
 }
 
-.service-text{
-  position:absolute;
-  
- top:130px;
-  font-size:12px;
-  text-align: left;
-margin-left:20px;
-padding:0px;
-width:350px;
-height:150px;
-line-height:20px;
 
-}
 
 .service-text{
   position:absolute;
@@ -1846,25 +1823,26 @@ line-height:20px;
 
 }
 
+.Final .box-1{
+
+  margin-top: 20px;
+  position: absolute;
+   right: 60px;
+   width:80%;
+   height:160px;
+   background-image: url(../img/gray_logo_final.png);
+ border:0px;
+
+ 
+
+  
+}
+
+
   }
 
-  @media only screen and (max-width: 475px){
+  @media only screen and (max-width: 400px){
 
-    .login-box{
-      position: absolute;
-     
-      top:70%;
-      left: 201px;
-      width: 400px;
-      height:400px;
-     
-      transform: translate(-50%, -50%);
-      background-color: rgba(0,0,0,0.7);
-      box-sizing: border-box;
-      box-shadow: 0 15px 25px rgba(0,0,0,0.6);
-   
-    
-     }
 
      .service-text{
       position:absolute;
@@ -1874,7 +1852,7 @@ line-height:20px;
       text-align: left;
     
     padding:0px;
-    width:350px;
+    width:700px;
     height:150px;
     line-height:20px;
     
@@ -1888,17 +1866,69 @@ line-height:20px;
   
  @media only screen and (max-width:375px) {
 
+  
+.wrapper-main{
+
+  width:145%;
+  
+  }
+
+  .login-box{
+     
+     
+   
+    width:80%;
+    height:60%;
+    left:203px;
+   margin-top:140px;
+ 
+  
+   }
+
+
+   .Final .box-4{
+
+    margin-top: 70px;
+    position: absolute;
+     left: 20px;
+     width:400px;
+     height:400px;
+     padding:40px;
+     
+    
+  
+  box-sizing: border-box;
+  
+  
+   }
 
 
   .service-text{
    
     
   
-    font-size:12px;
+    font-size:12px; 
     
   top:870px;
 
   
   }
+
+
+  .Final .box-4{
+
+    margin-top: 30px;
+    position: absolute;
+     left: 20px;
+     width:400px;
+     height:400px;
+     padding:40px;
+     
+    
+  
+  box-sizing: border-box;
+  
+  
+   }
 
  }
